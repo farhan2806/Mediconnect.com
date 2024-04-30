@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    background-color: rgb(243, 245, 249);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center the items */
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+nav ul li a:hover {
+    color: rgb(239, 165, 226);
+    transform: scale(1.05);
+}
+
+/* Adjust the size of services text to match other items */
+nav ul .services a {
+    font-size: 18px;
+}
+.right {
+    float: right;
+    /* margin-top: 20px; */
+}
+
+.right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.right ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+.right ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.right ul li:hover ul.dropdown {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+}
+
+.right ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.right ul li ul.dropdown li {
+    display: block;
+}
+
+.right ul li ul.dropdown li a {
+    display: flex;
+    color: #333;
+    display: block;
+    text-decoration: none;
+    border: 0px solid black;
+    transition: all 0.2s ease-in;
+}
+
+.right ul li ul.dropdown li a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+
+.left {
+    display: flex;
+    width: 80px;
+    height: 70px;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.left img {
+    width: 90px;
+    margin-bottom: 14px;
+    margin-right: 5px;
+    filter: brightness(0);
+}
+
+.left div {
+    font-size: 2rem;
+    color: black;
+    height: 30px;
+    line-height: 30px;
+    justify-content: flex-end;
+    white-space: nowrap;
+}
+
+.first {
+    background-color: rgb(186, 247, 241);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn button {
+    font-size: 17px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 4px 7px;
+    background-color: rgb(97, 164, 239);
+    transition: all 1s ease-in-out;
+    font-weight: bold;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn button:hover {
+    cursor: pointer;
+    background-color: rgb(22, 22, 79);
+    color: rgb(203, 170, 233);
+    border-radius: 15px;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.first div {
+    background-color: none;
+    width: 30%;
+}
+
+.leftsection {
+    background-color: none;
+    font-size: 3rem;
+    width: 34px;
+}
+
+.rightsection img {
+    width: 455px;
+    margin: 50px 0;
+
+}
+
+.purple {
+    color: rgb(170, 107, 228);
+}
+
+#element {
+    color: rgb(125, 7, 168);
+}
+
+.icons-container {
+    display: flex;
+    margin: 50px 15px;
+    justify-content: center;
+}
+
+.icons-container .icons {
+    border: 3px solid #4CAF50; 
+    margin: 0 15px;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 2rem;
+    transition: transform 0.3s ease, border-color 0.3s ease; 
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.icons-container .icons:hover {
+    transform: translateY(-15px);
+    box-shadow: 17px 0px 17px rgba(83, 87, 15, 0.1);
+    border-color: #FFC107; 
+    border-color: #0c5708; 
+}
+
+.icons-container .icons i {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+    transition: color 0.3s ease; 
+}
+
+.icons-container .icons h3 {
+    font-size: 30px;
+    margin: 10px 5px;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
+    color: #333; 
+    transition: color 0.3s ease; 
+}
+
+.icons-container .icons:hover i,
+.icons-container .icons:hover h3 {
+    color: #FFC107;
+    color: #0c5708;
+    /* border: 2px solid #0c5708; */
+}
+
+
+.book{
+    border: 3px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background-image: radial-gradient(rgb(46, 49, 146),rgb(27, 255, 255));
+}
+
+.heading{
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.book .box{
+    width: 50%;
+    margin: 10px 0;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+    padding: 12px;
+
+}
+
+.book_btn{
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    transition: 0.5s all ease-out;
+}
+
+.book_btn:hover{
+    cursor: pointer;
+    background-color: rgb(15, 25, 138);
+    color: whitesmoke;
+}
+
+.blogs {
+    border: 2px solid #ccc; 
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.heading-does {
+    font-size: 45px;
+    margin: 15px;
+    color: #333; 
+}
+
+.twoinfos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 40px;
+}
+
+.info {
+    border: 2px solid red;
+    margin-right: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 5px;
+    border: 3px solid #ccc; 
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+    width: 40vw;
+}
+
+.info:hover {
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.Infoimages i {
+    margin: 0 20px;
+    font-size: 50px;
+    color: #333; 
+    transition: color 0.3s ease; 
+}
+
+.info:hover .Infoimages i {
+    color: #007bff; 
+}
+
+.info-text {
+    color: #333; 
+    font-size: 18px;
+    transition: color 0.3s ease; 
+}
+
+.info:hover .info-text {
+    color: #007bff; 
+}
+
+
+.footer {
+	background-color: rgb(47, 43, 43);
+	padding: 70px 0;
+}
+
+.container .row{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: rgb(233, 30, 99);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li{
+    list-style: none;
+}
+
+.footer-col ul li a {
+	font-size: 16px;
+	text-transform: capitalize;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: 300;
+	color: rgb(187, 187, 187);
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: rgb(255, 255, 255);
+	padding-left: 8px;
+}
+
+.footer-col .social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: rgb(255, 255, 255);
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: rgb(36, 38, 43);
+	background-color: rgb(255, 255, 255);
+}
+
+.credit{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+}
+/* Your existing CSS styles here */
+
+.dropdown-wrapper {
+    position: relative;
+}
+
+.services-dropdown {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.services-dropdown span {
+    margin-right: 5px;
+}
+
+.services-dropdown i {
+    font-size: 14px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 200px;
+}
+
+.dropdown li {
+    padding: 10px 15px;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown li a i {
+    margin-right: 10px;
+}
+
+.dropdown li:hover {
+    background-color: #f8f9fa;
+}
+
+#mental{
+    background-color: yellow;
+    position: sticky;
+    left: 87vw;
+    bottom: 20px;
+    z-index: 1000;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;    
+    border-radius: 25px;
+    transition: all 0.7s ease-in-out;
+}
+
+.ChatIcon{
+    /* filter: invert(); */
+    margin-right: 15px;
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+#mental:hover{
+    background-color: rgb(255, 216, 0);
+    border-radius: 40px;
+}

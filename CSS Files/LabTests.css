@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.full-body-checkup {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    height: 550px;
+}
+.card img{
+    height: 250px;
+}
+
+.card h3 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.pricing-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-btn:hover {
+    background-color: #45a049;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+/* Your existing CSS remains unchanged */
+/* Add new styles for hover effects and animations below */
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-btn {
+    transition: background-color 0.3s ease;
+}
+
+.pricing-btn:hover {
+    background-color: #45a049;
+}
+
+.credit {
+    /* Add some animation to the credit */
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Your existing CSS */
+
+/* Add styles for carousel buttons */
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    z-index: 1;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.card-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    display: flex;
+}
+
+.carousel {
+    display: flex;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.card {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    /* Other card styles */
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+.carousel {
+    overflow: hidden; /* Add this line to hide overflow content */
+}
+
+/* Your existing CSS */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+}
+
+.card h3 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    /* Limit text to 3 lines and add ellipsis for overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-text {
+    margin-bottom: 10px;
+}
+
+.pricing-btn {
+    margin-top: 10px; /* Add spacing between text and button */
+}
+/* Existing CSS remains unchanged */
+.card .hidden-content {
+    display: none; /* Initially hide the hidden content */
+}
+
+.card .read-more {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+.card .read-more:hover {
+    text-decoration: underline;
+}
+

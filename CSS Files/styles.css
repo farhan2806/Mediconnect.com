@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333; /* Default text color */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Slideshow styling */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 500px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* The dots/bullets */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.card {
+    width: calc(30% - 20px);
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Add transition for box-shadow and background-color */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #fcfcfc; 
+}
+
+
+
+
+.card h3 {
+    color: #341127; 
+    font-size: 1.4em; 
+    margin-bottom: 15px; 
+}
+
+.card p {
+    color: #555; 
+    font-size: 1em;
+    line-height: 1.5; 
+}
+
+
+.card a {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.card a:hover {
+    color: #825304;
+}
+
+.card a i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.card a:hover i {
+    transform: translateX(5px);
+}
+
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+    }
+}
+
+
+.social-links a {
+    color: #41978c; 
+    margin: 0 5px;
+    font-size: 1.8em;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #333; 
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.content h2 {
+    color: #480a2f; 
+    font-size: 2em; 
+    margin-bottom: 20px;
+}
+
+
+.content p {
+    color: #333; 
+    font-size: 1.1em; 
+    line-height: 1.6; 
+    text-align: justify; 
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif; 
+}
+
