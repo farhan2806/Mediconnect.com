@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab Tests Form</title>
+<link rel="stylesheet" href="CSS Files/labform.css">
+<link rel="icon" href="Images/logo.png" type="image/png">
+</head>
+<body>
+
+<div class="container">
+  <div class="image">
+    <img src="Images/labtest.jpg" alt="Lab Test Image">
+  </div>
+  <div class="form-container">
+    <h2>Book Your Lab Test</h2>
+    <p>Fill out the form below to book your lab test.</p>
+    <form action="lab_submit.php" method="post">
+      <div class="form-group">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="testType">Test Type:</label>
+        <select id="testType" name="testType" required>
+          <option value="">Select Test Type</option>
+          <option value="Blood Test">Complete Blood Test</option>
+          <option value="Urine Test">Urine Test</option>
+          <option value="Lipid Test">Lipid Test</option>
+          <option value="C-Reactive Protein">C-Reactive Protein</option>
+          <option value="Vitamin D">Vitamin D</option>
+          <option value="Liver-function Test">Liver-function Test</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="preferredDate">Preferred Date:</label>
+        <input type="date" id="preferredDate" name="preferredDate">
+      </div>
+      <!-- <div class="form-group">
+        <label for="message">Additional Information:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div> -->
+      <div class="form-group">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions.</label>
+      </div>
+      <div class="form-group">
+        <button type="submit">Book Test</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="JS Files/labform.js"></script>
+</body>
+</html>

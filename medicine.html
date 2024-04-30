@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Mediconnect | Buy Medicines from India's Trusted Medicine Store
+    </title>
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" href="Images/logo.png" type="image/png">
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="CSS Files/home_phone.css">
+    <link rel="stylesheet" href="CSS Files/home.css">
+    <link rel="stylesheet" href="CSS Files/medicine.css">
+    <!-- <link rel="stylesheet" href="./css/index.css" />
+		<link rel="stylesheet" href="./components/header/navbar.css" />
+		<link rel="stylesheet" href="./css/slideShow.css" />
+		<link rel="stylesheet" href="./components/footer/footer.css" />
+		<link rel="stylesheet" href="./components/login/login.css" /> -->
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav>
+        <div class="left">
+            <img src="Images/logo.png" alt="M">
+            <div>MediConnect</div>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li class="dropdown-wrapper">
+                    <div class="services-dropdown">
+
+                        <span style="font-size: 18px;">Our Services</span>
+
+                    </div>
+                    <ul class="dropdown">
+                        <li><a href="book_doc.html"><i class="fas fa-hospital"></i> Schedule Your Appointment</a>
+                        </li>
+                        <li><a href="LabTests.html"><i class="fas fa-stethoscope"></i> Lab Tests</a></li>
+                        <li><a href="medicine.html"><i class="fas fa-notes-medical"></i> Order Medicines</a></li>
+                        <li><a href="FullBody.html"><i class="fas fa-procedures"></i> Full Body Checkup</a></li>
+                        <li><a href="healthProblems.html"><i class="fas fa-brain"></i> Mental Health</a></li>
+                        <li><a href="#blogs"><i class="fas fa-comments"></i> Do's and Dont's</a></li>
+                        <li><a href="#"><i class="fas fa-ambulance"></i> Emergency Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="/FullBody.html">FullBody Checkups</a></li>
+                <li><a href="#">Emergency Services</a></li>
+                <li class="dropdown-wrapper">
+                    <div class="services-dropdown">
+
+                        <span style="font-size: 18px;">More</span>
+
+                    </div>
+                    <ul class="dropdown">
+                        <li><a href="feedback.html"><i class="fas fa-comment"></i>Feedback</a>
+                        </li>
+                        <li><a href="contact.html"><i class="fas fa-phone"></i>Contact us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="btn">
+            <button onclick="openLogIn()">Log In/Sign Up</button>
+        </div>
+    </nav>
+
+    <div class="login-overlay"></div>
+    <div class="signup-overlay"></div>
+    <!-- Slideshow Section -->
+    <div class="slideShow-container">
+        <!-- <div id="imgFlex">
+            <div class="imgSlider">
+                <img src="Images/slideImg1.png" alt="">
+            </div>
+            <div class="imgFixed">
+                <img src="Images/dazwflov1wz1bbtg19ve.png" />
+            </div>
+        </div> -->
+        <div id="text">
+            MediConnect: India’s Leading Online Pharmacy & Healthcare Platform
+        </div>
+    </div>
+
+    <!-- Banner -->
+    
+    <!-- Full body health checkups -->
+    <!-- <div class="categoryContainer">
+        <div class="cat-title">
+            <span class="titleText">Full body health checkups</span>
+            <span>SEE ALL</span>
+        </div>
+        <div class="slider-container">
+            <div class="slider" id="full-body-health-checkup"></div>
+
+            <div class="rightArrow" onclick="healthSlideR()">
+                <div></div>
+            </div>
+            <div class="leftArrow" onclick="healthSlideL()">
+                <div></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Featured brands -->
+    <div class="categoryContainer">
+        <div class="cat-title">
+            <span class="titleText">Featured brands</span>
+            <span>SEE ALL</span>
+        </div>
+        <div class="slider-container">
+            <div class="brand-slider" id="featured-brands">
+                <div class="brand-item">
+                    <img src="Images/accucheck.webp" alt="accu check">
+                    <p>Accu-Check</p>
+                </div>
+                <div class="brand-item">
+                    <img src="Images/mamaearth.png" alt="Mamaearth">
+                    <p>Mamaearth</p>
+                </div>
+                <div class="brand-item">
+                    <img src="Images/complan.webp" alt="aComplan">
+                    <p>Complan</p>
+                </div>
+                <div class="brand-item">
+                    <img src="Images/bornvita.webp" alt="Born Vita">
+                    <p>Born Vita</p>
+                </div>
+                <div class="brand-item">
+                    <img src="Images//kapiva.webp">
+                    <p>Kapivak</p>
+                </div>
+                <div class="brand-item">
+                    <img src="Images//ayurveda.webp" alt="Ayurveda">
+                    <p>Ayurveda</p>
+                </div>
+                <div class="brand-item">
+                    <img src="Images/cetaphil.webp" alt="Cetaphil">
+                    <p>Cetaphil</p>
+                </div>
+            </div>
+
+            <!-- <div class="rightArrow" onclick="brandsSlideR()">
+                <div></div>
+            </div>
+            <div class="leftArrow" onclick="brandsSlideL()">
+                <div></div>
+            </div> -->
+        </div>
+    </div>
+    <!-- Top Sellers From Colgate -->
+    <div class="categoryContainer">
+        <div class="cat-title">
+            <span class="titleText">Top Sellers From Piramal</span>
+            <span>SEE ALL</span>
+        </div>
+        <div class="slider-container">
+            <div class="slider" id="top-seller">
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+            </div>
+
+            <div class="rightArrow" onclick="topSlideR()">
+                <div></div>
+            </div>
+            <div class="leftArrow" onclick="topSlideL()">
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- Shop by Health Concerns -->
+    <div class="categoryContainer">
+        <div class="cat-title">
+            <span class="titleText">Shop by Health Concerns</span>
+            <span>SEE ALL</span>
+        </div>
+        <div class="slider-container">
+            <div class="brand-slider" id="health-concern">
+                <div class="brand-item">
+                    <img src="Images//diabetes.jpeg" alt="problem">
+                    <p>Diabetes Care</p>
+                </div>
+                <div class="brand-item">
+                    <img src="Images/cardiac.png" alt="problem">
+                    <p>Cardiac Care</p>
+                </div>
+                <div class="brand-item">
+                    <img src="Images/respiration.jpg" alt="problem">
+                    <p>Respiratory Care</p>
+                </div>
+                <div class="brand-item">
+                    <img src="Images/liver.jpg" alt="problem">
+                    <p>Liver Care</p>
+                </div>
+                <div class="brand-item">
+                    <img src="Images/kidney.jpg" alt="problem">
+                    <p>Kidney Care</p>
+                </div>
+                <div class="brand-item">
+                    <img src="Images/muscle.jpg" alt="problem">
+                    <p>Bone, Muscle care</p>
+                </div>
+                <div class="brand-item">
+                    <img src="Images/eye.jpg" alt="problem">
+                    <p>Eye Care</p>
+                </div>
+            </div>
+
+            <!-- <div class="rightArrow" onclick="healthConcernSlideR()">
+                <div></div>
+            </div>
+            <div class="leftArrow" onclick="healthConcernSlideL()">
+                <div></div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Multivitamins | Supplement of the week -->
+    <div class="categoryContainer">
+        <div class="cat-title">
+            <span class="titleText">Multivitamins | Supplement of the week</span>
+            <span>SEE ALL</span>
+        </div>
+        <div class="slider-container">
+            <div class="slider" id="multi-vitamin-products">
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+
+                <div class="card">
+                    <div class="img-holder">
+                        <img src="Images/i-pill.webp" alt="medicine">
+                    </div>
+                    <p>i-pill Tablet</p>
+                    <p style="margin-bottom: 5px;">strip of 1</p>
+                    <div class="rating" style="margin-top: 0;">
+                        <span>4.2</span>
+                        <img src="Images/star.png" alt="star">
+                        <div>
+                            <p style="color: black;width: 150px; height:50px;margin: top 0; ">140 ratings</p>
+                        </div>
+                    </div>
+                    <div class="itemPrice">
+                        <p class="actualPrice" style="width: 100%;">"MRP"
+                            <strike>Rs. 400</strike>
+                            <span style="color: green;">20% off</span>
+                        </p>
+                    </div>
+                    <div>Rs. 333</div>
+                </div>
+            </div>
+
+            <div class="rightArrow" onclick="vitaminSlideR()">
+                <div></div>
+            </div>
+            <div class="leftArrow" onclick="vitaminSlideL()">
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Description -->
+    <br />
+    <br />
+    <br />
+    <section class="description">
+        <h2>
+            Stay Healthy with MediConnect: Your Favourite Online Pharmacy and
+            Healthcare Platform
+        </h2>
+        <h3>We Bring Care to Health.</h3>
+        <p>
+            MediConnect is India's leading digital healthcare platform. From doctor
+            consultations on chat to online pharmacy and lab tests at home: we have
+            it all covered for you. Having delivered over 25 million orders in 1000+
+            cities till date, we are on a mission to bring "care" to "health" to
+            give you a flawless healthcare experience.
+        </p>
+        <h3>MediConnect: Your Favourite Online Pharmacy!</h3>
+        <p>
+            MediConnect is India's leading online chemist with over 2 lakh medicines
+            available at the best prices. We are your one-stop destination for other
+            healthcare products as well, such as over the counter pharmaceuticals,
+            healthcare devices and homeopathy and ayurveda medicines.
+        </p>
+        <p>
+            With MediConnect, you can buy medicines online and get them delivered at
+            your doorstep anywhere in India! But, is ordering medicines online a
+            difficult process? Not at all! Simply search for the products you want
+            to buy, add to cart and checkout. Now all you need to do is sit back as
+            we get your order delivered to you.
+        </p>
+        <p>
+            In case you need assistance, just give us a call and we will help you
+            complete your order.
+        </p>
+        <p>
+            Don't want to go through the hassle of adding each medicine separately?
+            You can simply upload your prescription and we will place your order for
+            you. And there is more! At MediConnect, you can buy health products and
+            medicines online at best discounts.
+        </p>
+        <p>
+            Now, isn't that easy? Why go all the way to the medicine store and wait
+            in line, when you have MediConnect Pharmacy at your service.
+        </p>
+        <h3>The Feathers in Our Cap</h3>
+        <p>
+            At MediConnect, our goal is to make healthcare understandable, accessible
+            and affordable in India. We set out on our journey in 2015, and have
+            come a long way since then. Along the way, we have been conferred with
+            prestigious titles like
+            <b>BML Munjal Award for 'Business Excellence through Learning and
+                Development', Best Online Pharmacy in India Award</b>
+            <!-- -->and <b>Top 50 venture in The Smart CEO-Startup50 India.</b>
+            <!-- -->We have been selected as the only company from across the globe
+            for<b>
+                <!-- -->SD#3 "Health &amp; Well Being for all" by Unreasonable group,
+                US State Department.</b>
+            <!-- -->In 2019 alone we received three awards including the<b>
+                <!-- -->BMW Simply Unstoppable Award.</b>
+        </p>
+        <h3>The Services We Offer</h3>
+        <p>
+            MediConnect is India's leading digital healthcare platform, where you can
+            buy medicines online with discount. Buy medicine online in Delhi,
+            Mumbai, Bangalore, Hyderabad, Pune, Gurgaon, Noida, Kolkata, Chennai,
+            Ahmedabad, Lucknow and around a 1000 more cities. Besides delivering
+            your online medicine order at your doorstep, we provide accurate,
+            authoritative &amp; trustworthy information on medicines and help people
+            use their medicines effectively and safely.
+        </p>
+        <p>
+            We also facilitate lab tests at home. You can avail over 2,000 tests and
+            get tested by 120+ top and verified labs at the best prices. Need to
+            consult a doctor? On our platform, you can talk to over 20 kinds of
+            specialists in just a few clicks.
+        </p>
+        <p>
+            Customer centricity is the core of our values. Our team of highly
+            trained and experienced doctors, phlebotomists and pharmacists looks
+            into each order to give you a fulfilling experience.
+        </p>
+        <p>
+            We’ve made healthcare accessible to millions by giving them quality care
+            at affordable prices. Customer centricity is the core of our values. Our
+            team of highly trained and experienced doctors, phlebotomists and
+            pharmacists looks into each order to give you a fulfilling experience.
+        </p>
+        <p>
+            Visit our online medical store now, and avail online medicine purchase
+            at a discount.<br />Stay Healthy!
+        </p>
+    </section>
+    <div class="popular">
+        <div id="moto">INDIA’S LARGEST HEALTHCARE PLATFORM</div>
+        <div class="popular-data">
+            <div class="number">
+                <div class="count">160m+</div>
+                <div class="line">Visitors</div>
+            </div>
+            <div class="number">
+                <div class="count">27m+</div>
+                <div class="line">Ordered Delivered</div>
+            </div>
+            <div class="number">
+                <div class="count">1800+</div>
+                <div class="line">Cities</div>
+            </div>
+        </div>
+
+        <div class="horizontal-line"></div>
+
+        <div class="app-download">
+            <div>Get the link to download App</div>
+            <div class="input">
+                <input type="text" name="" id="" placeholder="Enter Phone Number" />
+                <div class="upload-btn">Send Link</div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>MediConnect</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="credit">All rights reserved © group 7 Mediconnect.com</div>
+    <!-- Script Section -->
+    <script type="module" src="JS Files/medicine.js"></script>
+    <script src="JS Files/home.js"></script>
+</body>
+
+</html>

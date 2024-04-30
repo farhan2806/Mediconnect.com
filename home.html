@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS Files/home.css">
+    <link rel="stylesheet" href="CSS Files/home_phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="Images/logo.png" type="image/png">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="Images/logo.png" alt="M">
+                <div>MediConnect</div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown-wrapper">
+                        <div class="services-dropdown">
+
+                            <span style="font-size: 18px;">Our Services</span>
+
+                        </div>
+                        <ul class="dropdown">
+                            <li><a href="book_doc.html"><i class="fas fa-hospital"></i> Schedule Your Appointment</a>
+                            </li>
+                            <li><a href="LabTests.html"><i class="fas fa-stethoscope"></i> Lab Tests</a></li>
+                            <li><a href="medicine.html"><i class="fas fa-notes-medical"></i> Order Medicines</a></li>
+                            <li><a href="FullBody.html"><i class="fas fa-procedures"></i> Full Body Checkup</a></li>
+                            <li><a href="healthProblems.html"><i class="fas fa-brain"></i> Mental Health</a></li>
+                            <li><a href="#blogs"><i class="fas fa-comments"></i> Do's and Dont's</a></li>
+                            <li><a href="emergency.html"><i class="fas fa-ambulance"></i> Emergency Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="FullBody.html">FullBody Checkups</a></li>
+                    <li><a href="emergency.html">Emergency Services</a></li>
+                    <li class="dropdown-wrapper">
+                        <div class="services-dropdown">
+
+                            <span style="font-size: 18px;">More</span>
+
+                        </div>
+                        <ul class="dropdown">
+                            <li><a href="feedback.html"><i class="fas fa-comment"></i>Feedback</a>
+                            </li>
+                            <li><a href="contact.html"><i class="fas fa-phone"></i>Contact us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="btn">
+                <button onclick="openLogIn()">Log In/Sign Up</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <!-- <img src="Images/slide1.jpg" alt="" class="bg_img"> -->
+            <div class="leftsection">
+                Welcome to MediConnect:
+                <span class="purple"></span>
+                <div id="Book your Doctor"></div>
+                <div id="Schedule Your LabTests"></div>
+                <div id="Order Medicines"></div>
+                <span id="element"></span>
+
+            </div>
+            <div class="rightsection"><img src="Images/right.webp" alt="A">
+            </div>
+
+        </section>
+        <section class="icons-container">
+            <div class="icons" id="BookDoctorHome">
+                <i class="fas fa-user-md"></i>
+                <h3>Book Doctor at your Doorstep</h3>
+
+            </div>
+            <div class="icons" id="MentalHealth">
+                <i class="fas fa-spa"></i>
+                <h3>Mental Health Consutancy</h3>
+
+            </div>
+
+            <div class="icons" id="FullCheck">
+                <i class="fas fa-notes-medical"></i>
+                <h3>FullBody Checkups</h3>
+
+            </div>
+            <div class="icons" id="LabTest">
+                <i class="fas fa-vial"></i>
+                <h3>Home Lab Tests</h3>
+
+            </div>
+            <div class="icons" id="medicines">
+                <i class="fas fa-pills"></i>
+                <h3>Order Medicines</h3>
+            </div>
+
+        </section>
+        <section class="book" id="book">
+            <h1 class="heading">Book Online Appointment</h1>
+            <div class="row">
+                <form action="">
+                    <input type="text" placeholder="Name" class="box">
+                    <input type="number" placeholder="Phone number" class="box">
+                    <input type="email" placeholder="Email Id" class="box">
+                    <input type="date" placeholder="Date" class="box">
+                </form>
+                <button class="book_btn">Book Now</button>
+            </div>
+        </section>
+        <section class="blogs" id="blogs">
+            <h1 class="heading-does"><span>DO's AND DON'Ts</span></h1>
+            <div class="twoinfos">
+                <div class="distance">
+                    <div class="info">
+                        <div class="Infoimages">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="information">
+                            <h2>Skin Care</h2>
+                            Skin care involves practices, products, and routines aimed at maintaining the health and
+                            appearance of the skin. It encompasses cleansing, moisturizing, sun protection, and
+                            treatments tailored to various skin types and concerns. Effective skin care promotes
+                            hydration, protection from environmental damage, and addresses issues like acne, aging, and
+                            hyperpigmentation. <a href="skincare.html">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="Infoimages">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="information">
+                        <h2>Hydration</h2>
+                        Hydration is the process of replenishing the body's water content to maintain optimal function.
+                        It's vital for overall health, aiding in digestion, circulation, temperature regulation, and
+                        nutrient absorption. In skincare, hydration involves moisturizing the skin to prevent dryness
+                        and maintain its elasticity, suppleness, and youthful appearance.<a href="Hydration.html">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="twoinfos">
+                <div class="distance">
+                    <div class="info">
+                        <div class="Infoimages">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <div class="information">
+                            <h2>Walking</h2>
+                            </h2>
+                            Walking is a fundamental form of human locomotion, involving the rhythmic movement of the
+                            legs to propel the body forward. It's a low-impact exercise accessible to people of all ages
+                            and fitness levels, offering numerous health benefits such as improved cardiovascular
+                            health, strengthened muscles, and stress reduction. <a href="Walking.html">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="Infoimages">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <div class="information">
+                        <h2>Nutrition</h2>
+                        Nutrition is the science of how food nourishes the body, providing essential nutrients for
+                        growth, maintenance, and overall health. It encompasses the consumption, digestion, and
+                        absorption of nutrients from various food sources. A balanced diet rich in vitamins, minerals,
+                        protein, carbohydrates, and fats is crucial for optimal physical and mental well-being. <a
+                            href="Nutrition.html">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="twoinfos">
+                <div class="distance">
+                    <div class="info">
+                        <div class="Infoimages">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <div class="information">
+                            <h2>Sleep</h2>
+                            Sleep is a vital physiological process essential for overall health and well-being. It
+                            allows the body and mind to rest, repair, and recharge. Quality sleep supports cognitive
+                            function, emotional balance, immune system function, and hormone regulation. Consistent,
+                            restorative sleep is crucial for optimal physical and mental performance and longevity. <a
+                                href="Sleep.html">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="Infoimages">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="information">
+                        <h2>Mindfull</h2>
+                        Mindfulness is the practice of being fully present and engaged in the present moment, without
+                        judgment or distraction. It involves cultivating awareness of thoughts, feelings, bodily
+                        sensations, and the surrounding environment. Through mindfulness techniques such as meditation
+                        and deep breathing, individuals can reduce stress, enhance focus, and foster emotional
+                        resilience. <a href="MindFullness.html">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>MediConnect</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="credit">All rights reserved © group 7 Mediconnect.com</div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/9f405ffd-a4e6-4882-8751-ecc86dcd5231/webchat/config.js"
+        defer></script>
+    <script src="JS files/home.js"></script>
+</body>
+
+</html>
